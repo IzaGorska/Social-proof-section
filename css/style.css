@@ -118,7 +118,8 @@ div.comments div {
         grid-template-areas:
             "introduction ratings"
             "comments comments";
-        margin: 15vh 10vw;
+        margin: 15vh 10vw 0 10vw;
+
     }
 
     div.introduction {
