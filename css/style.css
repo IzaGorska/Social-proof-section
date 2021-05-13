@@ -19,9 +19,8 @@
 body {
     font-size: 15px;
     font-family: 'Spartan', sans-serif;
-    height: 100vh;
     background-image: url('/images/bg-pattern-top-mobile.svg'), url('/images/bg-pattern-bottom-mobile.svg');
-    background-position:left top, right bottom ;
+    background-position: left top, right bottom;
     background-repeat: no-repeat;
 }
 
@@ -106,7 +105,6 @@ div.comments div {
 
 @media(min-width:1024px) {
     body {
-        min-height: 100vh;
         background-image: url('/images/bg-pattern-top-desktop.svg'), url('/images/bg-pattern-bottom-desktop.svg');
 
     }
@@ -118,7 +116,7 @@ div.comments div {
         grid-template-areas:
             "introduction ratings"
             "comments comments";
-        margin: 15vh 10vw;
+        margin: 15vh 10vw 0 10vw;
     }
 
     div.introduction {
@@ -186,21 +184,25 @@ div.comments div {
             ". . .";
         grid-area: comments;
     }
+
     div.comments div {
         width: 23vw;
         min-height: 220px;
     }
 
-    div.comments div:nth-child(2){
+    div.comments div:nth-child(2) {
         margin-top: 50px;
     }
-    div.comments div:nth-child(3){
+
+    div.comments div:nth-child(3) {
         margin-top: 70px;
     }
+
     .name {
         font-size: 0.8em;
         padding-bottom: 5px;
     }
+
     .status {
         font-size: 0.8em;
     }
