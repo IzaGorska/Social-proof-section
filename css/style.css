@@ -121,7 +121,7 @@ div.comments div {
 
     div.introduction {
         grid-area: introduction;
-        margin-right: 180px;
+        margin-right: 170px;
         text-align: left;
 
     }
@@ -159,6 +159,7 @@ div.comments div {
 
     div.ratings div h5 {
         margin-left: 35px;
+        margin-top: 0;
     }
 
     div.ratings div:nth-child(2) {
