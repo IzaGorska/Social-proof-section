@@ -22,10 +22,11 @@ body {
     background-image: url('/images/bg-pattern-top-mobile.svg'), url('/images/bg-pattern-bottom-mobile.svg');
     background-position: left top, right bottom;
     background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 div.container {
-    margin: 50px 10vw;
+    padding: 50px 10vw;
 }
 
 div.introduction {
@@ -60,7 +61,8 @@ div.comments {
 }
 
 div.comments div {
-    height: 200px;
+    height: auto;
+    align-self: start;
     margin: 20px 0;
     padding: 30px;
     border-radius: 10px;
@@ -84,7 +86,7 @@ div.comments div {
 .name {
     grid-area: 1 / 2 / 2 / 3;
     font-size: 0.7em;
-    align-self: flex-end;
+    align-self: end;
     padding-bottom: 3px;
 }
 
@@ -116,7 +118,8 @@ div.comments div {
         grid-template-areas:
             "introduction ratings"
             "comments comments";
-        margin: 15vh 10vw 0 10vw;
+        padding: 10vh 10vw 0 10vw;
+
     }
 
     div.introduction {
@@ -139,10 +142,6 @@ div.comments div {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: min-content min-content min-content;
-        grid-template-areas:
-            "."
-            "."
-            ".";
         grid-area: ratings;
         align-content: center;
     }
@@ -181,14 +180,14 @@ div.comments div {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-        grid-template-areas:
-            ". . .";
+        grid-gap: 0 20px;
         grid-area: comments;
     }
 
     div.comments div {
         width: 23vw;
         min-height: 220px;
+
     }
 
     div.comments div:nth-child(2) {
